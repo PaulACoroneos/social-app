@@ -55,6 +55,7 @@ export function ModerationModlistsScreen(_props: Props) {
             name: urip.hostname,
             rkey: urip.rkey,
           })
+        // eslint-disable-next-line no-empty
         } catch {}
       },
     })

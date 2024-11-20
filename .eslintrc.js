@@ -1,7 +1,6 @@
 module.exports = {
   root: true,
   extends: [
-    '@react-native',
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
@@ -10,6 +9,7 @@ module.exports = {
   ],
   parser: '@typescript-eslint/parser',
   plugins: [
+    '@react-native',
     '@typescript-eslint',
     'react',
     'lingui',
@@ -18,8 +18,6 @@ module.exports = {
     'eslint-plugin-react-compiler',
   ],
   rules: {
-    'no-async-promise-executor': 0,
-    // Temporary until https://github.com/facebook/react-native/pull/43756 gets into a release.
     'prettier/prettier': 0,
     'react/no-unescaped-entities': 0,
     'react/prop-types': 0,
@@ -116,6 +114,9 @@ module.exports = {
   ],
   settings: {
     componentWrapperFunctions: ['observer'],
+    react: {
+      version: 'detect',
+    },
   },
   parserOptions: {
     sourceType: 'module',
