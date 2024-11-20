@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 import {ImageRequireSource} from 'react-native'
 
 export const DEF_AVATAR: ImageRequireSource = require('../../assets/default-avatar.png')

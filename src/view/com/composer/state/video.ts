@@ -335,6 +335,7 @@ export async function processVideo(
   })
 
   let pollFailures = 0
+  // eslint-disable-next-line no-constant-condition
   while (true) {
     if (signal.aborted) {
       return // Exit async loop

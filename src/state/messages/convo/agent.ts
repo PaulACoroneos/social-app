@@ -89,7 +89,7 @@ export class Convo {
     this.convoId = params.convoId
     this.agent = params.agent
     this.events = params.events
-    this.senderUserDid = params.agent.session?.did!
+    this.senderUserDid = params.agent.session?.did ?? ''
 
     this.subscribe = this.subscribe.bind(this)
     this.getSnapshot = this.getSnapshot.bind(this)

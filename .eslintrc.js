@@ -1,15 +1,26 @@
 module.exports = {
   root: true,
+  env: {
+    browser: true,
+    es2021: true,
+    jest: true,
+    node: true,
+    'react-native/react-native': true,
+  },
+  globals: {
+    JSX: true,
+  },
   extends: [
+    '@react-native',
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-native-a11y/ios',
     'prettier',
+    'plugin:@typescript-eslint/recommended',
   ],
   parser: '@typescript-eslint/parser',
   plugins: [
-    '@react-native',
     '@typescript-eslint',
     'react',
     'lingui',
@@ -18,7 +29,16 @@ module.exports = {
     'eslint-plugin-react-compiler',
   ],
   rules: {
+    'no-empty': 0,
+    'no-inner-declarations': 0,
+    'no-async-promise-executor': 0,
+    'no-control-regex': 0,
+    'prefer-rest-params': 0,
+    // Temporary until https://github.com/facebook/react-native/pull/43756 gets into a release.
     'prettier/prettier': 0,
+    '@typescript-eslint/no-explicit-any': 'warn',
+    '@typescript-eslint/ban-ts-comment': 0,
+    '@typescript-eslint/ban-types': 0,
     'react/no-unescaped-entities': 0,
     'react/prop-types': 0,
     'react-native/no-inline-styles': 0,
@@ -45,6 +65,7 @@ module.exports = {
     'bsky-internal/use-exact-imports': 'error',
     'bsky-internal/use-typed-gates': 'error',
     'bsky-internal/use-prefixed-imports': 'error',
+    'prefer-const': 'off',
     'simple-import-sort/imports': [
       'error',
       {
@@ -106,7 +127,6 @@ module.exports = {
     '*.lock',
     '.husky',
     'patches',
-    'bskyweb',
     '*.html',
     'bskyweb',
     'src/locale/locales/_build/',
@@ -114,12 +134,8 @@ module.exports = {
   ],
   settings: {
     componentWrapperFunctions: ['observer'],
-    react: {
-      version: 'detect',
-    },
   },
   parserOptions: {
-    sourceType: 'module',
-    ecmaVersion: 'latest',
+    tsconfigRootDir: __dirname,
   },
 }

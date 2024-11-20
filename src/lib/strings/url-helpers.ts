@@ -300,7 +300,7 @@ export function isPossiblyAUrl(str: string): boolean {
   if (str.startsWith('https://')) {
     return true
   }
-  const [firstWord] = str.split(/[\s\/]/)
+  const [firstWord] = str.split(/[\s/]/)
   return isValidDomain(firstWord)
 }
 
