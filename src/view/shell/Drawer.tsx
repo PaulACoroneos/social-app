@@ -122,7 +122,7 @@ let DrawerProfileCard = ({
 DrawerProfileCard = React.memo(DrawerProfileCard)
 export {DrawerProfileCard}
 
-let DrawerContent = ({}: React.PropsWithoutRef<{}>): React.ReactNode => {
+let DrawerContent = (_props: React.PropsWithoutRef<{}>): React.ReactNode => {
   const t = useTheme()
   const insets = useSafeAreaInsets()
   const setDrawerOpen = useSetDrawerOpen()

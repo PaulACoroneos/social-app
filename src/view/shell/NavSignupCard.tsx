@@ -12,7 +12,7 @@ import {Button, ButtonText} from '#/components/Button'
 import {Link} from '#/components/Link'
 import {Text} from '#/components/Typography'
 
-let NavSignupCard = ({}: {}): React.ReactNode => {
+let NavSignupCard = (_props: {}): React.ReactNode => {
   const {_} = useLingui()
   const {requestSwitchToAccount} = useLoggedOutViewControls()
   const closeAllActiveElements = useCloseAllActiveElements()

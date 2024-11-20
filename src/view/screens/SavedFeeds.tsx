@@ -36,7 +36,7 @@ import * as Layout from '#/components/Layout'
 import {Loader} from '#/components/Loader'
 
 type Props = NativeStackScreenProps<CommonNavigatorParams, 'SavedFeeds'>
-export function SavedFeeds({}: Props) {
+export function SavedFeeds(_props: Props) {
   const {data: preferences} = usePreferencesQuery()
   if (!preferences) {
     return <View />

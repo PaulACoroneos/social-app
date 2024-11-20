@@ -2,6 +2,7 @@ module.exports = {
   root: true,
   extends: [
     '@react-native',
+    'eslint:recommended',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-native-a11y/ios',
