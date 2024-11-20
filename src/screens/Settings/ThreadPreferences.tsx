@@ -17,7 +17,7 @@ import {Text} from '#/components/Typography'
 import * as SettingsList from './components/SettingsList'
 
 type Props = NativeStackScreenProps<CommonNavigatorParams, 'PreferencesThreads'>
-export function ThreadPreferencesScreen({}: Props) {
+export function ThreadPreferencesScreen(_props: Props) {
   const {_} = useLingui()
   const t = useTheme()
 

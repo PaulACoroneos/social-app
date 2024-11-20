@@ -8,7 +8,6 @@ export type EditImageDialogProps = {
   image: ComposerImage
   onChange: (next: ComposerImage) => void
 }
-
-export const EditImageDialog = ({}: EditImageDialogProps): React.ReactNode => {
+export const EditImageDialog = (_props: EditImageDialogProps): React.ReactNode => {
   return null
 }

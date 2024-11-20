@@ -25,7 +25,7 @@ import {DeactivateAccountDialog} from './components/DeactivateAccountDialog'
 import {ExportCarDialog} from './components/ExportCarDialog'
 
 type Props = NativeStackScreenProps<CommonNavigatorParams, 'AccountSettings'>
-export function AccountSettingsScreen({}: Props) {
+export function AccountSettingsScreen(_props: Props) {
   const t = useTheme()
   const {_} = useLingui()
   const {currentAccount} = useSession()

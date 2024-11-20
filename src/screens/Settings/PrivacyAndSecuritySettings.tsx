@@ -21,7 +21,7 @@ type Props = NativeStackScreenProps<
   CommonNavigatorParams,
   'PrivacyAndSecuritySettings'
 >
-export function PrivacyAndSecuritySettingsScreen({}: Props) {
+export function PrivacyAndSecuritySettingsScreen(_props: Props) {
   const {_} = useLingui()
   const t = useTheme()
   const {data: appPasswords} = useAppPasswordsQuery()

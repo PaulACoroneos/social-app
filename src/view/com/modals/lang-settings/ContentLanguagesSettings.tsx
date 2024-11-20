@@ -18,7 +18,7 @@ import {LanguageToggle} from './LanguageToggle'
 
 export const snapPoints = ['100%']
 
-export function Component({}: {}) {
+export function Component(_props:{}) {
   const {closeModal} = useModalControls()
   const langPrefs = useLanguagePrefs()
   const setLangPrefs = useLanguagePrefsApi()

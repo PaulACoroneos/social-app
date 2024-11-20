@@ -6,7 +6,7 @@ import {useComposerState} from '#/state/shell/composer'
 import {atoms as a, useTheme} from '#/alf'
 import {ComposePost, useComposerCancelRef} from '../com/composer/Composer'
 
-export function Composer({}: {winHeight: number}) {
+export function Composer(_props: {winHeight: number}) {
   const {setFullyExpandedCount} = useDialogStateControlContext()
   const t = useTheme()
   const state = useComposerState()

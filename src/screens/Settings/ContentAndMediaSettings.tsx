@@ -23,7 +23,7 @@ type Props = NativeStackScreenProps<
   CommonNavigatorParams,
   'ContentAndMediaSettings'
 >
-export function ContentAndMediaSettingsScreen({}: Props) {
+export function ContentAndMediaSettingsScreen(_props: Props) {
   const {_} = useLingui()
   const autoplayDisabledPref = useAutoplayDisabled()
   const setAutoplayDisabledPref = useSetAutoplayDisabled()

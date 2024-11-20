@@ -22,7 +22,7 @@ import {Text} from '#/components/Typography'
 import * as SettingsList from './components/SettingsList'
 
 type Props = NativeStackScreenProps<CommonNavigatorParams, 'AppearanceSettings'>
-export function AppearanceSettingsScreen({}: Props) {
+export function AppearanceSettingsScreen(_props: Props) {
   const {_} = useLingui()
   const {fonts} = useAlf()
 

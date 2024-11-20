@@ -53,7 +53,7 @@ const LABEL_VALUES: (keyof typeof LABELS)[] = Object.keys(
   LABELS,
 ) as (keyof typeof LABELS)[]
 
-export const DebugModScreen = ({}: NativeStackScreenProps<
+export const DebugModScreen = (_props: NativeStackScreenProps<
   CommonNavigatorParams,
   'DebugMod'
 >) => {

@@ -26,7 +26,7 @@ import * as Layout from '#/components/Layout'
 
 const MAIN_VIEWS = ['Base', 'Controls', 'Error', 'Notifs']
 
-export const DebugScreen = ({}: NativeStackScreenProps<
+export const DebugScreen = (_props: NativeStackScreenProps<
   CommonNavigatorParams,
   'Debug'
 >) => {

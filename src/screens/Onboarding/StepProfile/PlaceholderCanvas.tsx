@@ -19,7 +19,7 @@ export interface PlaceholderCanvasRef {
 // This component is supposed to be invisible to the user. We only need this for ViewShot to have something to
 // "screenshot".
 export const PlaceholderCanvas = React.forwardRef<PlaceholderCanvasRef, {}>(
-  function PlaceholderCanvas({}, ref) {
+  function PlaceholderCanvas(_, ref) {
     const {avatar} = useAvatar()
     const viewshotRef = React.useRef<ViewShot>(null)
     const Icon = avatar.placeholder.component

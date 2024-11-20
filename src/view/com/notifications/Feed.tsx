@@ -71,8 +71,8 @@ export function Feed({
     if (isFetched) {
       if (isEmpty) {
         arr = arr.concat([EMPTY_FEED_ITEM])
-      } else if (data) {
-        for (const page of data?.pages) {
+      } else if (data?.pages?.length) {
+        for (const page of data.pages) {
           arr = arr.concat(page.items)
         }
       }

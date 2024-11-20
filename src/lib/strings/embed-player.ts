@@ -430,7 +430,7 @@ export function parseEmbedPlayerFromUrl(
     }
 
     switch (type) {
-      case 'go':
+      case 'go': {
         const formattedGroupId = `${id}`
         return {
           type: 'flickr_album',
@@ -440,6 +440,7 @@ export function parseEmbedPlayerFromUrl(
             -2,
           )}@N${formattedGroupId.slice(-2)}`,
         }
+      }
       case 's':
         return {
           type: 'flickr_album',

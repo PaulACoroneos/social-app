@@ -365,7 +365,7 @@ const ImageItem = ({
     (show, prevShow) => {
       if (show && !prevShow) {
         runOnJS(setShowLoader)(false)
-      } else if (!prevShow && show) {
+      } else if (prevShow && !show) {
         runOnJS(setShowLoader)(true)
       }
     },

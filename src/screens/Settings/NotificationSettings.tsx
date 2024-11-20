@@ -15,7 +15,7 @@ import {Loader} from '#/components/Loader'
 import * as SettingsList from './components/SettingsList'
 
 type Props = NativeStackScreenProps<AllNavigatorParams, 'NotificationSettings'>
-export function NotificationSettingsScreen({}: Props) {
+export function NotificationSettingsScreen(_props: Props) {
   const {_} = useLingui()
 
   const {data, isError: isQueryError, refetch} = useNotificationFeedQuery()

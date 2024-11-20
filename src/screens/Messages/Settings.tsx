@@ -23,7 +23,7 @@ import {useBackgroundNotificationPreferences} from '../../../modules/expo-backgr
 type AllowIncoming = 'all' | 'none' | 'following'
 
 type Props = NativeStackScreenProps<CommonNavigatorParams, 'MessagesSettings'>
-export function MessagesSettingsScreen({}: Props) {
+export function MessagesSettingsScreen(_props: Props) {
   const {_} = useLingui()
   const {currentAccount} = useSession()
   const {data: profile} = useProfileQuery({

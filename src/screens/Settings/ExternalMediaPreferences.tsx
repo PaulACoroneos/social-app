@@ -22,7 +22,7 @@ type Props = NativeStackScreenProps<
   CommonNavigatorParams,
   'PreferencesExternalEmbeds'
 >
-export function ExternalMediaPreferencesScreen({}: Props) {
+export function ExternalMediaPreferencesScreen(_props: Props) {
   const {_} = useLingui()
   return (
     <Layout.Screen testID="externalMediaPreferencesScreen">

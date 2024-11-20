@@ -23,7 +23,7 @@ import {VerifyEmailDialog} from '#/components/dialogs/VerifyEmailDialog'
 import * as Layout from '#/components/Layout'
 
 type Props = NativeStackScreenProps<CommonNavigatorParams, 'ModerationModlists'>
-export function ModerationModlistsScreen({}: Props) {
+export function ModerationModlistsScreen(_props: Props) {
   const {_} = useLingui()
   const pal = usePalette('default')
   const setMinimalShellMode = useSetMinimalShellMode()

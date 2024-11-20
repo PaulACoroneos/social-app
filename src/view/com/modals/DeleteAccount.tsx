@@ -33,7 +33,7 @@ import {ScrollView, TextInput} from './util'
 
 export const snapPoints = isAndroid ? ['90%'] : ['55%']
 
-export function Component({}: {}) {
+export function Component(_props: {}) {
   const pal = usePalette('default')
   const theme = useTheme()
   const t = useNewTheme()

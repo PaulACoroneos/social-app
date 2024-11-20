@@ -24,7 +24,7 @@ export function SigninDialog() {
   )
 }
 
-function SigninDialogInner({}: {control: Dialog.DialogOuterProps['control']}) {
+function SigninDialogInner(_props: {control: Dialog.DialogOuterProps['control']}) {
   const t = useTheme()
   const {_} = useLingui()
   const {gtMobile} = useBreakpoints()

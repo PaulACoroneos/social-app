@@ -20,7 +20,7 @@ type Props = NativeStackScreenProps<
   CommonNavigatorParams,
   'PreferencesFollowingFeed'
 >
-export function FollowingFeedPreferencesScreen({}: Props) {
+export function FollowingFeedPreferencesScreen(_props: Props) {
   const {_} = useLingui()
 
   const {data: preferences} = usePreferencesQuery()

@@ -246,7 +246,7 @@ export function useSubmitSignup() {
         })
         /*
          * Must happen last so that if the user has multiple tabs open and
-         * createAccount fails, one tab is not stuck in onboarding — Eric
+         * createAccount fails, one tab is not stuck in onboarding -Eric
          */
         onboardingDispatch({type: 'start'})
       } catch (e: any) {

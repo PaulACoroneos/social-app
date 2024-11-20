@@ -19,7 +19,7 @@ import {Text} from '#/components/Typography'
 import * as SettingsList from './components/SettingsList'
 
 type Props = NativeStackScreenProps<CommonNavigatorParams, 'LanguageSettings'>
-export function LanguageSettingsScreen({}: Props) {
+export function LanguageSettingsScreen(_props: Props) {
   const {_} = useLingui()
   const langPrefs = useLanguagePrefs()
   const setLangPrefs = useLanguagePrefsApi()

@@ -335,8 +335,8 @@ let Feed = ({
           type: 'empty',
           key: 'empty',
         })
-      } else if (data) {
-        for (const page of data?.pages) {
+      } else if (data?.pages && Array.isArray(data.pages)) {
+        for (const page of data.pages) {
           for (const slice of page.slices) {
             if (slice.isIncompleteThread && slice.items.length >= 3) {
               const beforeLast = slice.items.length - 2

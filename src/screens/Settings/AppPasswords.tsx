@@ -37,7 +37,7 @@ import {AddAppPasswordDialog} from './components/AddAppPasswordDialog'
 import * as SettingsList from './components/SettingsList'
 
 type Props = NativeStackScreenProps<CommonNavigatorParams, 'AppPasswords'>
-export function AppPasswordsScreen({}: Props) {
+export function AppPasswordsScreen(_props: Props) {
   const {_} = useLingui()
   const {data: appPasswords, error} = useAppPasswordsQuery()
   const createAppPasswordControl = useDialogControl()

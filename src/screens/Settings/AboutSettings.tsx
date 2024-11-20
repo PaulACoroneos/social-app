@@ -16,7 +16,7 @@ import {Wrench_Stroke2_Corner2_Rounded as WrenchIcon} from '#/components/icons/W
 import * as Layout from '#/components/Layout'
 
 type Props = NativeStackScreenProps<CommonNavigatorParams, 'AboutSettings'>
-export function AboutSettingsScreen({}: Props) {
+export function AboutSettingsScreen(_props: Props) {
   const {_} = useLingui()
 
   return (

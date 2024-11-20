@@ -30,7 +30,7 @@ type Props = NativeStackScreenProps<
   CommonNavigatorParams,
   'ModerationBlockedAccounts'
 >
-export function ModerationBlockedAccounts({}: Props) {
+export function ModerationBlockedAccounts(_props: Props) {
   const pal = usePalette('default')
   const {_} = useLingui()
   const setMinimalShellMode = useSetMinimalShellMode()

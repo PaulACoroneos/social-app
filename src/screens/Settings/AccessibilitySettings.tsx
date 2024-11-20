@@ -27,7 +27,7 @@ type Props = NativeStackScreenProps<
   CommonNavigatorParams,
   'AccessibilitySettings'
 >
-export function AccessibilitySettingsScreen({}: Props) {
+export function AccessibilitySettingsScreen(_props: Props) {
   const {_} = useLingui()
 
   const requireAltTextEnabled = useRequireAltTextEnabled()

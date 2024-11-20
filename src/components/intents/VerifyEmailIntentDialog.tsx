@@ -26,7 +26,7 @@ export function VerifyEmailIntentDialog() {
   )
 }
 
-function Inner({}: {control: DialogControlProps}) {
+function Inner(_props: {control: DialogControlProps}) {
   const t = useTheme()
   const {gtMobile} = useBreakpoints()
   const {_} = useLingui()

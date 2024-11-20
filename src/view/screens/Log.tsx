@@ -17,7 +17,7 @@ import {ViewHeader} from '#/view/com/util/ViewHeader'
 import {ScrollView} from '#/view/com/util/Views'
 import * as Layout from '#/components/Layout'
 
-export function LogScreen({}: NativeStackScreenProps<
+export function LogScreen(_props: NativeStackScreenProps<
   CommonNavigatorParams,
   'Log'
 >) {

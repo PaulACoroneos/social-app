@@ -54,7 +54,7 @@ import * as Menu from '#/components/Menu'
 import * as Prompt from '#/components/Prompt'
 
 type Props = NativeStackScreenProps<CommonNavigatorParams, 'Settings'>
-export function SettingsScreen({}: Props) {
+export function SettingsScreen(_props: Props) {
   const {_} = useLingui()
   const reducedMotion = useReducedMotion()
   const {logoutEveryAccount} = useSessionApi()

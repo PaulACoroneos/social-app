@@ -30,7 +30,7 @@ type Props = NativeStackScreenProps<
   CommonNavigatorParams,
   'ModerationMutedAccounts'
 >
-export function ModerationMutedAccounts({}: Props) {
+export function ModerationMutedAccounts(_props: Props) {
   const pal = usePalette('default')
   const {_} = useLingui()
   const setMinimalShellMode = useSetMinimalShellMode()
